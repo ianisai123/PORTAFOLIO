@@ -19,22 +19,22 @@ const galleries = {
   ],
 
   kiosk: [
-    "img/Login.png",
-    "img/InicioEmpleado.png",
-    "img/Formatos.png",
-    "img/SolicitudesEmpleados.png",
-    "img/SolicitudesJefe.png",
-    "img/subordinados.png",
-    "img/Confirmar.png",
-    "img/VerFormato.png",
-    "img/InicioAdmin.png",
-    "img/AgregarUsuario.png",
-    "img/BuscarEmpleado.png",
-    "img/EditarEmpleado.png",
-    "img/SolitudesPendientes.png"
+    "Login.png",
+    "InicioEmpleado.png",
+    "Formatos.png",
+    "SolicitudesEmpleados.png",
+    "SolicitudesJefe.png",
+    "subordinados.png",
+    "Confirmar.png",
+    "VerFormato.png",
+    "InicioAdmin.png",
+    "AgregarUsuario.png",
+    "BuscarEmpleado.png",
+    "EditarEmpleado.png",
+    "SolitudesPendientes.png"
   ],
   expenses: [
-    "img/gastos-placeholder.svg"
+    "gastos-placeholder.svg"
   ]
 };
 
