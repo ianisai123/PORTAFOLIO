@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Ian Isai Escobar Rolon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#inicio" class="logo">Ian<span>.</span></a>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">☰</label>
+    <div class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Portafolio de trabajo</p>
+      <h1>Ian Isai Escobar Rolon</h1>
+      <p class="hero-text">
+        Estudiante de Ingeniería en Software enfocado en crear aplicaciones web y móviles útiles,
+        claras y funcionales para resolver problemas reales.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">Ver proyectos</a>
+        <a href="#contacto" class="btn secondary">Contactarme</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <span class="status">Disponible para prácticas / proyectos</span>
+      <h2>Áreas de enfoque</h2>
+      <div class="tags">
+        <span>Backend</span>
+        <span>Frontend</span>
+        <span>Bases de datos</span>
+        <span>UI/UX</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre-mi" class="section two-columns">
+      <div>
+        <p class="section-label">Sobre mí</p>
+        <h2>Diseño y desarrollo sistemas con propósito.</h2>
+      </div>
+      <div>
+        <p>
+          Me interesa desarrollar soluciones digitales que ayuden a ordenar procesos, mejorar la
+          experiencia del usuario y facilitar tareas cotidianas. He trabajado en sistemas como un
+          Service Desk para entorno hospitalario, un kiosko de empleados y una aplicación de gestión
+          de gastos para estudiantes.
+        </p>
+        <p>
+          Mi objetivo es seguir creciendo como desarrollador, combinando lógica, diseño y análisis
+          para crear proyectos que no solo funcionen, sino que también sean fáciles de usar.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header">
+        <p class="section-label">Proyectos destacados</p>
+        <h2>Sistemas desarrollados</h2>
+        <p>
+          Cada proyecto presenta un problema, una solución y tecnologías aplicadas. Aquí está la parte
+          donde el código deja de ser tarea y empieza a verse como experiencia real.
+        </p>
+      </div>
+
+      <div class="projects">
+        <article class="card featured">
+          <div class="project-image image-service">
+            <span>Service Desk</span>
+          </div>
+          <div class="card-content">
+            <div class="card-top">
+              <h3>Service Desk ANTARA</h3>
+              <span class="badge">Web</span>
+            </div>
+            <p>
+              Sistema de gestión de incidencias para un entorno hospitalario. Permite registrar,
+              consultar y dar seguimiento a solicitudes internas.
+            </p>
+            <div class="project-details">
+              <p><strong>Problema:</strong> falta de control y seguimiento en reportes internos.</p>
+              <p><strong>Solución:</strong> plataforma centralizada para administrar tickets.</p>
+            </div>
+            <div class="tech-list">
+              <span>Python</span><span>Flask</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn small" onclick="openModal('service', 0)">Ver imágenes</button>
+              <button class="btn small secondary" onclick="openDetails('service')">Ver detalles</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-image image-kiosk">
+            <span>Kiosko de empleados</span>
+          </div>
+          <div class="card-content">
+            <div class="card-top">
+              <h3>Kiosko de empleados</h3>
+              <span class="badge">Empresarial</span>
+            </div>
+            <p>
+              Sistema interno para que empleados consulten información laboral, avisos, horarios,
+              perfil y solicitudes de manera organizada.
+            </p>
+            <div class="project-details">
+              <p><strong>Problema:</strong> dependencia del área administrativa para consultas básicas.</p>
+              <p><strong>Solución:</strong> portal digital de autoservicio para empleados.</p>
+            </div>
+            <div class="tech-list">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Base de datos</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn small" onclick="openModal('kiosk', 0)">Ver propuesta visual</button>
+              <button class="btn small secondary" onclick="openDetails('kiosk')">Ver detalles</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-image image-expenses">
+            <span>Gestión de gastos</span>
+          </div>
+          <div class="card-content">
+            <div class="card-top">
+              <h3>App de gestión de gastos</h3>
+              <span class="badge">Móvil</span>
+            </div>
+            <p>
+              Aplicación para estudiantes que permite registrar presupuesto mensual, gastos,
+              categorías, estadísticas y reportes.
+            </p>
+            <div class="project-details">
+              <p><strong>Problema:</strong> poca organización del dinero durante el mes.</p>
+              <p><strong>Solución:</strong> control visual de ingresos, gastos y saldo disponible.</p>
+            </div>
+            <div class="tech-list">
+              <span>Android</span><span>Java/Kotlin</span><span>SQLite</span><span>PDF</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn small" onclick="openModal('expenses', 0)">Ver propuesta visual</button>
+              <button class="btn small secondary" onclick="openDetails('expenses')">Ver detalles</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section skills-section">
+      <div class="section-header">
+        <p class="section-label">Habilidades</p>
+        <h2>Tecnologías y herramientas</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, diseño responsivo e interfaces claras para usuarios finales.</p>
+        </div>
+        <div class="skill-box">
+          <h3>Backend</h3>
+          <p>Python, Flask, lógica de negocio, validaciones y conexión entre sistema y datos.</p>
+        </div>
+        <div class="skill-box">
+          <h3>Bases de datos</h3>
+          <p>MySQL, SQLite, diseño de tablas, consultas y organización de información.</p>
+        </div>
+        <div class="skill-box">
+          <h3>Herramientas</h3>
+          <p>GitHub, VS Code, Android Studio, documentación y pruebas de funcionamiento.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="section process-section">
+      <div class="section-header">
+        <p class="section-label">Proceso de trabajo</p>
+        <h2>Cómo desarrollo mis proyectos</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="step"><span>01</span><h3>Análisis</h3><p>Identifico el problema, usuarios y necesidades principales.</p></div>
+        <div class="step"><span>02</span><h3>Diseño</h3><p>Organizo pantallas, funciones y flujo del sistema.</p></div>
+        <div class="step"><span>03</span><h3>Desarrollo</h3><p>Programo la solución conectando interfaz, lógica y base de datos.</p></div>
+        <div class="step"><span>04</span><h3>Pruebas</h3><p>Reviso errores, validaciones y experiencia de usuario.</p></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <p class="section-label">Contacto</p>
+      <h2>¿Trabajamos en una idea?</h2>
+      <p>
+        Puedes contactarme para proyectos académicos, prácticas profesionales o desarrollo de sistemas.
+      </p>
+      <div class="contact-card">
+        <p><strong>Email:</strong> <a href="mailto:ianisaiescobarrolon@gmail.com">ianisaiescobarrolon@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong> 5549132439</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Ian Isai Escobar Rolon. Portafolio de trabajo.</p>
+  </footer>
+
+  <div class="modal" id="imageModal">
+    <button class="close" onclick="closeModal()">✖</button>
+    <img id="modalImg" alt="Vista del proyecto" />
+    <div class="modal-buttons">
+      <button onclick="prevImg()">◀</button>
+      <button onclick="nextImg()">▶</button>
+    </div>
+  </div>
+
+  <div class="details-modal" id="detailsModal">
+    <div class="details-box">
+      <button class="close-details" onclick="closeDetails()">✖</button>
+      <h2 id="detailsTitle"></h2>
+      <p id="detailsDescription"></p>
+      <ul id="detailsList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
