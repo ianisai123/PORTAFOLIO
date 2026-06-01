@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#1e293b"/></linearGradient></defs>
+<rect width="1200" height="750" fill="url(#g)"/>
+<rect x="390" y="70" width="420" height="610" rx="44" fill="#07111f" opacity=".9"/>
+<rect x="430" y="130" width="340" height="86" rx="22" fill="#22c55e" opacity=".95"/>
+<text x="600" y="185" text-anchor="middle" fill="#052e16" font-family="Segoe UI, Arial" font-size="36" font-weight="800">$ 1,500</text>
+<rect x="430" y="260" width="340" height="58" rx="18" fill="#111827" stroke="#334155"/>
+<rect x="430" y="342" width="340" height="58" rx="18" fill="#111827" stroke="#334155"/>
+<rect x="430" y="424" width="340" height="58" rx="18" fill="#111827" stroke="#334155"/>
+<circle cx="480" cy="289" r="14" fill="#22c55e"/><circle cx="480" cy="371" r="14" fill="#38bdf8"/><circle cx="480" cy="453" r="14" fill="#f59e0b"/>
+<text x="600" y="590" text-anchor="middle" fill="#e5e7eb" font-family="Segoe UI, Arial" font-size="42" font-weight="700">Gestión de gastos</text>
+</svg>
