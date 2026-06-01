@@ -19,12 +19,12 @@ const galleries = {
   ],
 
   kiosk: [
-    "Login.png",
+    "LoginKiosko.png",
     "InicioEmpleado.png",
     "Formatos.png",
     "SolicitudesEmpleados.png",
     "SolicitudesJefe.png",
-    "subordinados.png",
+    "Subordinados.png",
     "Confirmar.png",
     "VerFormato.png",
     "InicioAdmin.png",
